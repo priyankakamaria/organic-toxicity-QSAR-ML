@@ -1,0 +1,4 @@
+Model,Best_CV_R2,Test_R2,Test_RMSE,Test_MAE,Best_Parameters
+Random Forest,0.6120475355377526,0.6333351173569511,0.8049989648507985,0.5769692285247535,"{'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': None}"
+XGBoost,0.6322946880916971,0.6479871853650899,0.7887509586812753,0.5627371148937883,"{'subsample': 0.7, 'n_estimators': 800, 'max_depth': 7, 'learning_rate': 0.01, 'colsample_bytree': 0.7}"
+Gradient Boosting,0.6197179234929917,0.6410376310277914,0.7964987976595086,0.5596932463935442,"{'n_estimators': 500, 'min_samples_split': 5, 'max_depth': 5, 'learning_rate': 0.05}"

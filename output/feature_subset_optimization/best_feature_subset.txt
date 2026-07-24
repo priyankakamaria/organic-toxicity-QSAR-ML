@@ -1,0 +1,6 @@
+Features    100.000000
+CV_R2         0.631453
+Test_R2       0.652154
+RMSE          0.784068
+MAE           0.559945
+Name: 3, dtype: float64

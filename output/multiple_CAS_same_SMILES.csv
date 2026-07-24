@@ -1,0 +1,34 @@
+CAS,chemical_name,organism,species_group,Duration_Value,effect,endpoint,mgperL,SMILES,SMILES_Canonical_RDKit,Conc_sign
+30525-89-4,Paraformaldehyde,lepomis macrochirus,fish,96,MOR,EC50,40.68,C=O,C=O,=
+30525-89-4,Paraformaldehyde,oncorhynchus mykiss,fish,96,MOR,EC50,60.0,C=O,C=O,=
+50-00-0,Formaldehyde,pimephales promelas,fish,96,MOR,EC50,24.5,C=O,C=O,=
+1928-43-4,"2-(2,4-Dichlorophenoxy)acetic acid, 2-Ethylhexyl ester",oncorhynchus mykiss,fish,96,MOR,EC50,44.5,CCCCC(CC)COC(=O)COc1ccc(Cl)cc1Cl,CCCCC(CC)COC(=O)COc1ccc(Cl)cc1Cl,=
+25168-26-7,"(2,4-Dichlorophenoxy)acetic acid isooctyl ester",lepomis macrochirus,fish,96,MOR,EC50,18.65,CCCCC(CC)COC(=O)COc1ccc(Cl)cc1Cl,CCCCC(CC)COC(=O)COc1ccc(Cl)cc1Cl,=
+111-87-5,1-Octanol,oncorhynchus mykiss,fish,96,MOR,EC50,12.09,CCCCCCCCO,CCCCCCCCO,=
+111-87-5,1-Octanol,pimephales promelas,fish,96,MOR,EC50,13.5,CCCCCCCCO,CCCCCCCCO,=
+68603-15-6,"Alcohols, C6-12",lepomis macrochirus,fish,96,MOR,EC50,4.31,CCCCCCCCO,CCCCCCCCO,=
+142-92-7,Hexyl acetate,pimephales promelas,fish,96,MOR,EC50,4.0,CCCCCCOC(C)=O,CCCCCCOC(C)=O,=
+88230-35-7,A mixture of: 1-hexyl acetate; 2-methyl-1-pentyl acetate; 3-methyl-1-pentyl acetate; 4-methyl-1-pentyl acetate; other mixed linear and branched C6-alkyl acetates,oncorhynchus mykiss,fish,96,MOR,EC50,11.9,CCCCCCOC(C)=O,CCCCCCOC(C)=O,=
+110895-43-7,"1-(N,N-dimethylcarbamoyl)-3-tert-butyl-5-carbethoxymethylthio-1H-1,2,4-triazole",oncorhynchus mykiss,fish,96,MOR,EC50,0.53,CCOC(=O)CSc1nc(nn1C(=O)N(C)C)C(C)(C)C,CCOC(=O)CSc1nc(C(C)(C)C)nn1C(=O)N(C)C,=
+112143-82-5,"[[1-[(Dimethylamino)carbonyl]-3-(1,1-dimethylethyl)-1H-1,2,4-triazol-5-yl]thio]acetic acid ethyl ester",lepomis macrochirus,fish,96,MOR,EC50,0.74,CCOC(=O)CSc1nc(nn1C(=O)N(C)C)C(C)(C)C,CCOC(=O)CSc1nc(C(C)(C)C)nn1C(=O)N(C)C,=
+106-44-5,4-Methylphenol,oncorhynchus mykiss,fish,96,MOR,EC50,7.9,Cc1ccc(O)cc1,Cc1ccc(O)cc1,=
+106-44-5,4-Methylphenol,pimephales promelas,fish,96,MOR,EC50,17.75,Cc1ccc(O)cc1,Cc1ccc(O)cc1,=
+1319-77-3,Cresol,lepomis macrochirus,fish,96,MOR,EC50,10.9,Cc1ccc(O)cc1,Cc1ccc(O)cc1,=
+121-14-2,"2,4-Dinitrotoluene",pimephales promelas,fish,96,MOR,EC50,22.0,Cc1ccc(cc1[N+]([O-])=O)[N+]([O-])=O,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],=
+25321-14-6,Dinitrotoluene,oncorhynchus mykiss,fish,96,MOR,EC50,13.9,Cc1ccc(cc1[N+]([O-])=O)[N+]([O-])=O,Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-],=
+108-38-3,"1,3-Dimethylbenzene",oncorhynchus mykiss,fish,96,MOR,EC50,8.0,Cc1cccc(C)c1,Cc1cccc(C)c1,=
+108-38-3,"1,3-Dimethylbenzene",pimephales promelas,fish,96,MOR,EC50,21.35,Cc1cccc(C)c1,Cc1cccc(C)c1,=
+1330-20-7,Dimethylbenzene,lepomis macrochirus,fish,96,MOR,EC50,19.935,Cc1cccc(C)c1,Cc1cccc(C)c1,=
+2437-79-8,"2,2',4,4'-Tetrachloro-1,1-biphenyl",lepomis macrochirus,fish,96,MOR,EC50,0.12,Clc1ccc(c(Cl)c1)c2ccc(Cl)cc2Cl,Clc1ccc(-c2ccc(Cl)cc2Cl)c(Cl)c1,=
+2437-79-8,"2,2',4,4'-Tetrachloro-1,1-biphenyl",oncorhynchus mykiss,fish,96,MOR,EC50,0.12,Clc1ccc(c(Cl)c1)c2ccc(Cl)cc2Cl,Clc1ccc(-c2ccc(Cl)cc2Cl)c(Cl)c1,=
+53469-21-9,PCB 1242,pimephales promelas,fish,96,MOR,EC50,0.015,Clc1ccc(c(Cl)c1)c2ccc(Cl)cc2Cl,Clc1ccc(-c2ccc(Cl)cc2Cl)c(Cl)c1,=
+129-67-9,"7-Oxabicyclo[2.2.1]heptane-2,3-dicarboxylic acid, sodium salt (1:2)",lepomis macrochirus,fish,96,MOR,EC50,105.0,[Na+].[Na+].[O-]C(=O)C1C2CCC(O2)C1C([O-])=O,O=C([O-])C1C2CCC(O2)C1C(=O)[O-].[Na+].[Na+],=
+129-67-9,"7-Oxabicyclo[2.2.1]heptane-2,3-dicarboxylic acid, sodium salt (1:2)",oncorhynchus mykiss,fish,96,MOR,EC50,1.39,[Na+].[Na+].[O-]C(=O)C1C2CCC(O2)C1C([O-])=O,O=C([O-])C1C2CCC(O2)C1C(=O)[O-].[Na+].[Na+],=
+145-73-3,"7-Oxabicyclo[2.2.1]heptane-2,3-dicarboxylic acid",pimephales promelas,fish,96,MOR,EC50,320.0,[Na+].[Na+].[O-]C(=O)C1C2CCC(O2)C1C([O-])=O,O=C([O-])C1C2CCC(O2)C1C(=O)[O-].[Na+].[Na+],=
+2439-00-1,"2,3,6-Trichlorobenzeneacetic acid sodium salt (1:1)",lepomis macrochirus,fish,96,MOR,EC50,14.0,[Na+].[O-]C(=O)Cc1c(Cl)ccc(Cl)c1Cl,O=C([O-])Cc1c(Cl)ccc(Cl)c1Cl.[Na+],=
+85-34-7,"2,3,6-Trichlorobenzeneacetic acid",oncorhynchus mykiss,fish,96,MOR,EC50,11.0,[Na+].[O-]C(=O)Cc1c(Cl)ccc(Cl)c1Cl,O=C([O-])Cc1c(Cl)ccc(Cl)c1Cl.[Na+],=
+2939-80-2,"(3aR,7aS)-rel-3a,4,7,7a-Tetrahydro-2-[(1,1,2,2-tetrachloroethyl)thio]-1H-isoindole-1,3(2H)-dione",lepomis macrochirus,fish,96,MOR,EC50,0.1439,ClC(Cl)C(Cl)(Cl)SN1C(=O)C2CC=CCC2C1=O,O=C1C2CC=CCC2C(=O)N1SC(Cl)(Cl)C(Cl)Cl,=
+6/1/2425 0:00,"3a,4,7,7a-Tetrahydro-2-[(1,1,2,2-tetrachloroethyl)thio]-1H-isoindole-1,3(2H)-dione",oncorhynchus mykiss,fish,96,MOR,EC50,0.034,ClC(Cl)C(Cl)(Cl)SN1C(=O)C2CC=CCC2C1=O,O=C1C2CC=CCC2C(=O)N1SC(Cl)(Cl)C(Cl)Cl,=
+13464-38-5,"Arsenic acid (H3AsO4), Trisodium salt",lepomis macrochirus,fish,96,MOR,EC50,92.9,[Na+].O[As](O)(O)=O,O=[As](O)(O)O.[Na+],=
+7778-43-0,"Arsenic acid (H3AsO4), Disodium salt",oncorhynchus mykiss,fish,96,MOR,EC50,55.25,[Na+].O[As](O)(O)=O,O=[As](O)(O)O.[Na+],=
+7778-43-0,"Arsenic acid (H3AsO4), Disodium salt",pimephales promelas,fish,96,MOR,EC50,17.9,[Na+].O[As](O)(O)=O,O=[As](O)(O)O.[Na+],=

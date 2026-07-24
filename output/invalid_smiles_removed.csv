@@ -1,0 +1,57 @@
+CAS,chemical_name,organism,species_group,Duration_Value,effect,endpoint,mgperL,SMILES,SMILES_Canonical_RDKit,Conc_sign
+900-95-8,(Acetyloxy)triphenylstannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.037,CC([O]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3)=O,CC([O]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3)=O,=
+2155-70-6,Tributyl[(2-methyl-1-oxo-2-propenyl)oxy]stannane,lepomis macrochirus,fish,96,MOR,EC50,0.036,CCCC[Sn](|[O]C(=O)C(C)=C)(CCCC)CCCC,CCCC[Sn](|[O]C(=O)C(C)=C)(CCCC)CCCC,=
+2155-70-6,Tributyl[(2-methyl-1-oxo-2-propenyl)oxy]stannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.063,CCCC[Sn](|[O]C(=O)C(C)=C)(CCCC)CCCC,CCCC[Sn](|[O]C(=O)C(C)=C)(CCCC)CCCC,=
+14275-57-1,"(8Z)-5,5,12,12-Tetrabutyl-7,10-dioxo-6,11-dioxa-5,12-distannahexadec-8-ene",lepomis macrochirus,fish,96,MOR,EC50,8.4e-05,CCCC[Sn](|[O]C(=O)\C=C/C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,CCCC[Sn](|[O]C(=O)\C=C/C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,=
+14275-57-1,"(8Z)-5,5,12,12-Tetrabutyl-7,10-dioxo-6,11-dioxa-5,12-distannahexadec-8-ene",oncorhynchus mykiss,fish,96,MOR,EC50,0.0017,CCCC[Sn](|[O]C(=O)\C=C/C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,CCCC[Sn](|[O]C(=O)\C=C/C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,=
+4419-22-1,"2-Hydroxy-5-[[(tributylstannyl)oxy]sulfonyl]benzoic acid, Tributylstannyl ester",lepomis macrochirus,fish,96,MOR,EC50,0.0475,CCCC[Sn](|[O][S](=O)(=O)c1ccc(O)c(c1)C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,CCCC[Sn](|[O][S](=O)(=O)c1ccc(O)c(c1)C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,=
+4419-22-1,"2-Hydroxy-5-[[(tributylstannyl)oxy]sulfonyl]benzoic acid, Tributylstannyl ester",oncorhynchus mykiss,fish,96,MOR,EC50,0.0235,CCCC[Sn](|[O][S](=O)(=O)c1ccc(O)c(c1)C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,CCCC[Sn](|[O][S](=O)(=O)c1ccc(O)c(c1)C([O]|[Sn](CCCC)(CCCC)CCCC)=O)(CCCC)CCCC,=
+7699-43-6,Dichlorooxozirconium,lepomis macrochirus,fish,96,MOR,EC50,142.5,Cl|[Zr](|Cl)=O,Cl|[Zr](|Cl)=O,=
+7699-43-6,Dichlorooxozirconium,pimephales promelas,fish,96,MOR,EC50,129.0,Cl|[Zr](|Cl)=O,Cl|[Zr](|Cl)=O,=
+20667-12-3,Disilver oxide,oncorhynchus mykiss,fish,96,MOR,EC50,0.0126,O(|[Ag])|[Ag],O(|[Ag])|[Ag],=
+20667-12-3,Disilver oxide,pimephales promelas,fish,96,MOR,EC50,0.0078,O(|[Ag])|[Ag],O(|[Ag])|[Ag],=
+13356-08-6,"1,1,1,3,3,3-Hexakis(2-methyl-2-phenylpropyl)distannoxane",lepomis macrochirus,fish,96,MOR,EC50,0.03,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,=
+13356-08-6,"1,1,1,3,3,3-Hexakis(2-methyl-2-phenylpropyl)distannoxane",oncorhynchus mykiss,fish,96,MOR,EC50,0.033,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,=
+13356-08-6,"1,1,1,3,3,3-Hexakis(2-methyl-2-phenylpropyl)distannoxane",pimephales promelas,fish,96,MOR,EC50,0.00185,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,O(|[Sn](CC(C)(C)c1ccccc1)(CC(C)(C)c2ccccc2)CC(C)(C)c3ccccc3)|[Sn](CC(C)(C)c4ccccc4)(CC(C)(C)c5ccccc5)CC(C)(C)c6ccccc6,=
+56-35-9,"1,1,1,3,3,3-Hexabutyldistannoxane",lepomis macrochirus,fish,96,MOR,EC50,0.00815,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,=
+56-35-9,"1,1,1,3,3,3-Hexabutyldistannoxane",oncorhynchus mykiss,fish,96,MOR,EC50,0.00475,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,=
+56-35-9,"1,1,1,3,3,3-Hexabutyldistannoxane",pimephales promelas,fish,96,MOR,EC50,0.0026,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,O(|[Sn](CCCC)(CCCC)CCCC)|[Sn](CCCC)(CCCC)CCCC,=
+10102-06-4,Bis(nitrato-kappaO)dioxo-uranium,lepomis macrochirus,fish,96,MOR,EC50,2.49,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,=
+10102-06-4,Bis(nitrato-kappaO)dioxo-uranium,oncorhynchus mykiss,fish,96,MOR,EC50,3.95,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,=
+10102-06-4,Bis(nitrato-kappaO)dioxo-uranium,pimephales promelas,fish,96,MOR,EC50,2.0,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,O(|[U](|O[N+]([O-])=O)(=O)=O)[N+]([O-])=O,=
+541-09-3,(T-4)-bis(Acetato-kappaO)dioxouranium,pimephales promelas,fish,96,MOR,EC50,3.7,O.O.CC(O|[U](|OC(C)=O)(=O)=O)=O,O.O.CC(O|[U](|OC(C)=O)(=O)=O)=O,=
+10028-15-6,Ozone,oncorhynchus mykiss,fish,96,MOR,EC50,0.0093,O=[O]=O,O=[O]=O,=
+1307-86-4,Cobalt trihydroxide,oncorhynchus mykiss,fish,96,MOR,EC50,1.459,O|[Co](|O)|O,O|[Co](|O)|O,=
+1307-86-4,Cobalt trihydroxide,pimephales promelas,fish,96,MOR,EC50,3.61,O|[Co](|O)|O,O|[Co](|O)|O,=
+20427-59-2,Copper hydroxide (Cu(OH)2),oncorhynchus mykiss,fish,96,MOR,EC50,0.08,O|[Cu]|O,O|[Cu]|O,=
+12135-22-7,Palladium dihydroxide,oncorhynchus mykiss,fish,96,MOR,EC50,0.2299999999999999,O|[Pd]|O,O|[Pd]|O,=
+13121-70-5,Tricyclohexylhydroxystannane,lepomis macrochirus,fish,96,MOR,EC50,0.0064,O|[Sn](C1CCCCC1)(C2CCCCC2)C3CCCCC3,O|[Sn](C1CCCCC1)(C2CCCCC2)C3CCCCC3,=
+13121-70-5,Tricyclohexylhydroxystannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.001475,O|[Sn](C1CCCCC1)(C2CCCCC2)C3CCCCC3,O|[Sn](C1CCCCC1)(C2CCCCC2)C3CCCCC3,=
+76-87-9,Hydroxytriphenylstannane,lepomis macrochirus,fish,96,MOR,EC50,0.023,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,=
+76-87-9,Hydroxytriphenylstannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.015,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,=
+76-87-9,Hydroxytriphenylstannane,pimephales promelas,fish,96,MOR,EC50,0.02,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,O|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,=
+16919-73-6,Dipotassium hexachloropalladate,oncorhynchus mykiss,fish,96,MOR,EC50,0.2299999999999999,[Cl]|[Pd--](|[Cl])(|[Cl])(|[Cl])(|[Cl])|[Cl].[K+].[K+],[Cl]|[Pd--](|[Cl])(|[Cl])(|[Cl])(|[Cl])|[Cl].[K+].[K+],=
+7647-18-9,Antimony pentachloride,pimephales promelas,fish,96,MOR,EC50,15.7,[Cl]|[Sb](|[Cl])(|[Cl])(|[Cl])|[Cl],[Cl]|[Sb](|[Cl])(|[Cl])(|[Cl])|[Cl],=
+639-58-7,Chlorotriphenylstannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.037,[Cl]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,[Cl]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,=
+10/4/1983 0:00,Tributylfluorostannane,lepomis macrochirus,fish,96,MOR,EC50,0.00725,[F]|[Sn](CCCC)(CCCC)CCCC,[F]|[Sn](CCCC)(CCCC)CCCC,=
+10/4/1983 0:00,Tributylfluorostannane,oncorhynchus mykiss,fish,96,MOR,EC50,0.0034,[F]|[Sn](CCCC)(CCCC)CCCC,[F]|[Sn](CCCC)(CCCC)CCCC,=
+379-52-2,Triphenyltin fluoride,oncorhynchus mykiss,fish,96,MOR,EC50,0.445,[F]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,[F]|[Sn](c1ccccc1)(c2ccccc2)c3ccccc3,=
+13746-66-2,(OC-6-11)-Hexakis(cyano-kappac)ferrate(3-) potassium (1:3),oncorhynchus mykiss,fish,96,MOR,EC50,5.61,[K+].[K+].[K+].[Fe-3](|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)|[C]#N,[K+].[K+].[K+].[Fe-3](|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)|[C]#N,=
+13943-58-3,(OC-6-11)-Hexakis(cyano-kappaC)ferrate(4-) potassium (1:4),oncorhynchus mykiss,fish,96,MOR,EC50,1.1,[K+].[K+].[K+].[K+].[Fe](|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)|[C]#N,[K+].[K+].[K+].[K+].[Fe](|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)(|[C]#N)|[C]#N,=
+13815-17-3,Tetraamminepalladium(2+) dichloride,oncorhynchus mykiss,fish,96,MOR,EC50,0.248,[NH2-]|[Pd++](|[NH2-])(|[NH2-])|[NH2-].[Cl].[Cl],[NH2-]|[Pd++](|[NH2-])(|[NH2-])|[NH2-].[Cl].[Cl],=
+19168-23-1,Diammonium hexachloropalladate,oncorhynchus mykiss,fish,96,MOR,EC50,0.2299999999999999,[NH4+].[NH4+].[Cl]|[Pd--](|[Cl])(|[Cl])(|[Cl])(|[Cl])|[Cl],[NH4+].[NH4+].[Cl]|[Pd--](|[Cl])(|[Cl])(|[Cl])(|[Cl])|[Cl],=
+57693-14-8,Trisodium bis[3-hydroxy-4-[(2-hydroxy-1-naphthyl)azo]-7-nitronaphthalene-1-sulphonato(3-)]chromate(3-),oncorhynchus mykiss,fish,96,MOR,EC50,1.4,[Na+].[Na+].[Na+].[Cr+3]|1|2|3|4(|[O-]c5ccc6ccccc6c5N=N|1c7c([O-]|2)cc(c8cc(ccc78)[N+]([O-])=O)[S]([O-])(=O)=O)|[O-]c9ccc%10ccccc%10c9N=N|3c%11c([O-]|4)cc(c%12cc(ccc%11%12)[N+]([O-])=O)[S]([O-])(=O)=O,[Na+].[Na+].[Na+].[Cr+3]|1|2|3|4(|[O-]c5ccc6ccccc6c5N=N|1c7c([O-]|2)cc(c8cc(ccc78)[N+]([O-])=O)[S]([O-])(=O)=O)|[O-]c9ccc%10ccccc%10c9N=N|3c%11c([O-]|4)cc(c%12cc(ccc%11%12)[N+]([O-])=O)[S]([O-])(=O)=O,=
+3264-82-2,"Bis(pentane-2,4-dionato-O,O')nickel",oncorhynchus mykiss,fish,96,MOR,EC50,15.3,[Ni]|1|2(|[O]C(=CC(=[OH]|1)C)C)|[O]C(=CC(=[OH]|2)C)C,[Ni]|1|2(|[O]C(=CC(=[OH]|1)C)C)|[O]C(=CC(=[OH]|2)C)C,=
+3264-82-2,"Bis(pentane-2,4-dionato-O,O')nickel",pimephales promelas,fish,96,MOR,EC50,1.04,[Ni]|1|2(|[O]C(=CC(=[OH]|1)C)C)|[O]C(=CC(=[OH]|2)C)C,[Ni]|1|2(|[O]C(=CC(=[OH]|1)C)C)|[O]C(=CC(=[OH]|2)C)C,=
+21041-93-0,Cobalt dihydroxide,oncorhynchus mykiss,fish,96,MOR,EC50,1.459,[OH2-].[OH2-].[Co++],[OH2-].[OH2-].[Co++],=
+21041-93-0,Cobalt dihydroxide,pimephales promelas,fish,96,MOR,EC50,3.61,[OH2-].[OH2-].[Co++],[OH2-].[OH2-].[Co++],=
+12054-48-7,Nickel dihydroxide,lepomis macrochirus,fish,96,MOR,EC50,30.4,[OH2-].[OH2-].[Ni++],[OH2-].[OH2-].[Ni++],=
+12054-48-7,Nickel dihydroxide,oncorhynchus mykiss,fish,96,MOR,EC50,15.3,[OH2-].[OH2-].[Ni++],[OH2-].[OH2-].[Ni++],=
+12054-48-7,Nickel dihydroxide,pimephales promelas,fish,96,MOR,EC50,2.685,[OH2-].[OH2-].[Ni++],[OH2-].[OH2-].[Ni++],=
+1308-14-1,Chromium (III) hydroxide,oncorhynchus mykiss,fish,96,MOR,EC50,4.4,[OH2-].[OH2-].[OH2-].[Cr+3],[OH2-].[OH2-].[OH2-].[Cr+3],=
+12607-70-4,[carbonato(2-)]tetrahydroxytrinickel,lepomis macrochirus,fish,96,MOR,EC50,30.4,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,=
+12607-70-4,[carbonato(2-)]tetrahydroxytrinickel,oncorhynchus mykiss,fish,96,MOR,EC50,15.3,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,=
+12607-70-4,[carbonato(2-)]tetrahydroxytrinickel,pimephales promelas,fish,96,MOR,EC50,2.685,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,[OH2-].[OH2-].[OH2-].[OH2-].[Ni++].[Ni++].[Ni++].[O-]C([O-])=O,=
+13463-41-7,(T-4)-Bis[1-(hydroxy-kappaO)-2(1H)-pyridinethionato-kappaS2]zinc,oncorhynchus mykiss,fish,96,MOR,EC50,0.0036,[Zn++](|[S-]c1cccc[n+]1[O-])|[S-]c2cccc[n+]2[O-],[Zn++](|[S-]c1cccc[n+]1[O-])|[S-]c2cccc[n+]2[O-],=
+13463-41-7,(T-4)-Bis[1-(hydroxy-kappaO)-2(1H)-pyridinethionato-kappaS2]zinc,pimephales promelas,fish,96,MOR,EC50,0.00268,[Zn++](|[S-]c1cccc[n+]1[O-])|[S-]c2cccc[n+]2[O-],[Zn++](|[S-]c1cccc[n+]1[O-])|[S-]c2cccc[n+]2[O-],=
+2/4/4468 0:00,"Bis(D-gluconato-O1,O2)zinc",oncorhynchus mykiss,fish,96,MOR,EC50,11.12,[Zn](|OC(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO)|OC(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO,[Zn](|OC(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO)|OC(=O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO,=

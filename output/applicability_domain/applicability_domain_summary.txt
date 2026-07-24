@@ -1,0 +1,11 @@
+Applicability Domain Summary
+============================
+
+Training compounds : 2632
+Testing compounds  : 658
+
+Descriptors : 100
+Warning leverage (h*) : 0.1151
+
+Inside AD : 645
+Outside AD: 13

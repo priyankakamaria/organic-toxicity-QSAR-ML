@@ -1,0 +1,6 @@
+Step,Features
+Initial descriptors,4470
+After constant removal,4419
+After low variance,1275
+After correlation removal,1038
+Random Forest selected,100

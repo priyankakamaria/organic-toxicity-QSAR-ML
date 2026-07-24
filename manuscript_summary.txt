@@ -1,0 +1,82 @@
+======================================================================
+QSAR MANUSCRIPT SUMMARY
+======================================================================
+
+Generated on: 2026-07-23 11:24:14.527410
+
+
+AVAILABLE FILES
+--------------------------------------------------
+
+FOUND: C:\Users\DELL\Documents\organic_toxicity_project\output\organic_toxicity_median.csv
+
+File: organic_toxicity_median.csv
+Rows: 3346
+Columns: 11
+Column names:
+CAS, chemical_name, organism, species_group, Duration_Value, effect, endpoint, mgperL, SMILES, SMILES_Canonical_RDKit, Conc_sign
+
+FOUND: C:\Users\DELL\Documents\organic_toxicity_project\output\y_randomization_results.csv
+
+File: y_randomization_results.csv
+Rows: 20
+Columns: 2
+Column names:
+Iteration, Randomized_R2
+
+FOUND: C:\Users\DELL\Documents\organic_toxicity_project\output\feature_importance\feature_importance.csv
+
+File: feature_importance.csv
+Rows: 100
+Columns: 2
+Column names:
+Feature, Importance
+
+
+ALL CSV FILES
+--------------------------------------------------
+C:\Users\DELL\Documents\organic_toxicity_project\data\organic_toxicity.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\clean_smiles_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\combined_no_constant_features.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\combined_no_correlated_features.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\combined_no_low_variance_features.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\combined_rdkit_morgan_maccs_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\dataset_with_pEC50.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\initial_model_metrics.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\invalid_CAS_numbers.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\invalid_smiles.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\invalid_smiles_removed.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\model_performance_results.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\model_predictions.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\morgan_fingerprints_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\multiple_CAS_same_SMILES.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\optimized_model_results.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\organic_toxicity_median.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\rdkit_descriptors_cleaned.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\rdkit_descriptors_cleaned_optionA.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\rdkit_descriptors_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\selected_features_train.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\selected_feature_names.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\standardized_smiles_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\step12_no_constant_features.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\test_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\train_dataset.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\X_test.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\X_train.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\y_randomization_results.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\y_test.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\y_train.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\applicability_domain\applicability_domain_results.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\catboost\catboost_feature_importance.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\catboost\catboost_metrics.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\catboost\catboost_predictions.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\feature_importance\feature_importance.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\feature_subset_optimization\feature_subset_results.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\feature_subset_optimization\full_feature_ranking.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table1_Dataset_Summary.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table2_Descriptor_Reduction.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table3_Model_Performance.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table4_Top20_SHAP_Features.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table5_Applicability_Domain.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\publication_tables\Table6_Y_Randomization.csv
+C:\Users\DELL\Documents\organic_toxicity_project\output\SHAP\shap_feature_importance.csv

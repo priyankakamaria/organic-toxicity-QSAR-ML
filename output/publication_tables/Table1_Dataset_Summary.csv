@@ -1,0 +1,6 @@
+Parameter,Value
+Total compounds,3290
+Training compounds,2632
+Testing compounds,658
+Response variable,pEC50
+Endpoint,EC50
