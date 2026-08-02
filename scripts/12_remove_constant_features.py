@@ -1,98 +1,140 @@
-import os
 import pandas as pd
+import os
 
 print("=" * 70)
-print("REMOVING CONSTANT FEATURES")
+print("CONSTANT FEATURE REMOVAL")
+print("TRAINING DATA ONLY")
 print("=" * 70)
 
-# ----------------------------------------------------------
-# Input and Output
-# ----------------------------------------------------------
+# ---------------------------------------------------------
+# Input
+# ---------------------------------------------------------
 
-input_file = "output/combined_rdkit_morgan_maccs_dataset.csv"
-output_file = "output/combined_no_constant_features.csv"
+train_file = "output/train_dataset.csv"
+test_file = "output/test_dataset.csv"
 
-# ----------------------------------------------------------
-# Load dataset
-# ----------------------------------------------------------
+# ---------------------------------------------------------
+# Outputs
+# ---------------------------------------------------------
 
-print("\nLoading dataset...")
+train_output = "output/train_no_constant_features.csv"
+test_output = "output/test_no_constant_features.csv"
 
-df = pd.read_csv(input_file)
+feature_file = "output/constant_filter_features.csv"
 
-print("\nOriginal dataset shape:")
-print(df.shape)
+# ---------------------------------------------------------
+# Load
+# ---------------------------------------------------------
 
-# ----------------------------------------------------------
-# Metadata columns
-# ----------------------------------------------------------
+train_df = pd.read_csv(train_file)
+test_df = pd.read_csv(test_file)
 
-meta_cols = ["CAS", "chemical_name", "SMILES"]
+print("\nTraining shape:", train_df.shape)
+print("Testing shape :", test_df.shape)
 
-print("\nMetadata columns:")
-print(meta_cols)
+# ---------------------------------------------------------
+# Metadata
+# ---------------------------------------------------------
 
-descriptor_cols = [col for col in df.columns if col not in meta_cols]
-
-print("\nNumber of descriptors:")
-print(len(descriptor_cols))
-
-# ----------------------------------------------------------
-# Separate metadata and descriptors
-# ----------------------------------------------------------
-
-meta_df = df[meta_cols]
-X = df[descriptor_cols]
-
-# ----------------------------------------------------------
-# Find constant features
-# ----------------------------------------------------------
-
-print("\nChecking constant features...")
-
-constant_features = [
-    col for col in X.columns
-    if X[col].nunique(dropna=False) == 1
+metadata_cols = [
+    "CAS",
+    "chemical_name",
+    "SMILES",
+    "organism",
+    "SMILES_Canonical_RDKit",
+    "Standardized_SMILES",
+    "Molecular_Weight",
+    "EC50_mol_L",
+    "mgperL",
+    "pEC50"
 ]
+
+metadata_cols = [
+    c for c in metadata_cols
+    if c in train_df.columns
+]
+
+# ---------------------------------------------------------
+# Feature columns
+# ---------------------------------------------------------
+
+feature_cols = [
+    c for c in train_df.columns
+    if c not in metadata_cols
+]
+
+print("\nInitial features:", len(feature_cols))
+
+# ---------------------------------------------------------
+# Find constant features using TRAINING DATA ONLY
+# ---------------------------------------------------------
+
+constant_features = []
+
+for col in feature_cols:
+
+    if train_df[col].nunique(dropna=False) <= 1:
+        constant_features.append(col)
 
 print("\nConstant features found:")
 print(len(constant_features))
 
-if len(constant_features) > 0:
-    print("\nFirst few constant features:")
-    print(constant_features[:20])
+# ---------------------------------------------------------
+# Retain features
+# ---------------------------------------------------------
 
-# ----------------------------------------------------------
-# Remove constant features
-# ----------------------------------------------------------
+selected_features = [
+    c for c in feature_cols
+    if c not in constant_features
+]
 
-X_clean = X.drop(columns=constant_features)
+# ---------------------------------------------------------
+# Apply SAME feature list to train and test
+# ---------------------------------------------------------
 
-# ----------------------------------------------------------
-# Combine metadata and descriptors
-# ----------------------------------------------------------
+train_final = train_df[
+    metadata_cols + selected_features
+]
 
-final_df = pd.concat([meta_df, X_clean], axis=1)
+test_final = test_df[
+    metadata_cols + selected_features
+]
 
-print("\nFinal dataset shape:")
-print(final_df.shape)
+# ---------------------------------------------------------
+# Save
+# ---------------------------------------------------------
 
-print("\nDescriptors remaining:")
-print(X_clean.shape[1])
+train_final.to_csv(
+    train_output,
+    index=False
+)
 
-print("\nDescriptors removed:")
-print(len(constant_features))
+test_final.to_csv(
+    test_output,
+    index=False
+)
 
-# ----------------------------------------------------------
-# Save dataset
-# ----------------------------------------------------------
+pd.DataFrame({
+    "Feature": selected_features
+}).to_csv(
+    feature_file,
+    index=False
+)
 
-os.makedirs("output", exist_ok=True)
+print("\nFinal training shape:")
+print(train_final.shape)
 
-final_df.to_csv(output_file, index=False)
+print("\nFinal testing shape:")
+print(test_final.shape)
 
-print("\nSaved file:")
-print(output_file)
+print("\nRemaining features:")
+print(len(selected_features))
 
-print("\nCompleted Successfully.")
+print("\nSaved:")
+print(train_output)
+print(test_output)
+print(feature_file)
+
+print("=" * 70)
+print("Completed Successfully")
 print("=" * 70)

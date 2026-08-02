@@ -1,104 +1,146 @@
-import os
 import pandas as pd
 import numpy as np
 
 print("=" * 70)
-print("REMOVING HIGHLY CORRELATED FEATURES")
+print("HIGH CORRELATION FEATURE REMOVAL")
+print("TRAINING DATA ONLY")
 print("=" * 70)
 
-# ----------------------------------------------------------
-# Input / Output
-# ----------------------------------------------------------
+# ---------------------------------------------------------
+# Input
+# ---------------------------------------------------------
 
-input_file = "output/combined_no_low_variance_features.csv"
-output_file = "output/combined_no_correlated_features.csv"
+train_file = "output/train_no_low_variance_features.csv"
+test_file = "output/test_no_low_variance_features.csv"
 
-# Correlation threshold
-correlation_threshold = 0.95
+# ---------------------------------------------------------
+# Output
+# ---------------------------------------------------------
 
-# ----------------------------------------------------------
-# Load dataset
-# ----------------------------------------------------------
+train_output = "output/train_no_correlation_features.csv"
+test_output = "output/test_no_correlation_features.csv"
 
-print("\nLoading dataset...")
+feature_file = "output/correlation_filter_features.csv"
 
-df = pd.read_csv(input_file)
+# ---------------------------------------------------------
+# Load
+# ---------------------------------------------------------
 
-print("\nDataset shape:")
-print(df.shape)
+train_df = pd.read_csv(train_file)
+test_df = pd.read_csv(test_file)
 
-# ----------------------------------------------------------
-# Separate metadata and descriptors
-# ----------------------------------------------------------
+# ---------------------------------------------------------
+# Metadata
+# ---------------------------------------------------------
 
-metadata_df = df.select_dtypes(include=["object", "string"]).copy()
-descriptor_df = df.select_dtypes(include=["number"]).copy()
-
-print("\nMetadata columns:")
-print(metadata_df.shape[1])
-
-print("Descriptor columns:")
-print(descriptor_df.shape[1])
-
-# ----------------------------------------------------------
-# Calculate correlation matrix
-# ----------------------------------------------------------
-
-print("\nCalculating correlation matrix...")
-
-corr_matrix = descriptor_df.corr().abs()
-
-print("Done.")
-
-# ----------------------------------------------------------
-# Find highly correlated features
-# ----------------------------------------------------------
-
-print("\nFinding highly correlated features...")
-
-upper = corr_matrix.where(
-    np.triu(np.ones(corr_matrix.shape), k=1).astype(bool)
-)
-
-to_drop = [
-    column for column in upper.columns
-    if any(upper[column] > correlation_threshold)
+metadata_cols = [
+    "CAS",
+    "chemical_name",
+    "SMILES",
+    "organism",
+    "SMILES_Canonical_RDKit",
+    "Standardized_SMILES",
+    "Molecular_Weight",
+    "EC50_mol_L",
+    "mgperL",
+    "pEC50"
 ]
 
-print("\nHighly correlated features found:")
-print(len(to_drop))
+metadata_cols = [
+    c for c in metadata_cols
+    if c in train_df.columns
+]
 
-# ----------------------------------------------------------
-# Remove correlated features
-# ----------------------------------------------------------
+feature_cols = [
+    c for c in train_df.columns
+    if c not in metadata_cols
+]
 
-descriptor_clean = descriptor_df.drop(columns=to_drop)
+X_train = train_df[feature_cols]
 
-print("\nRemaining descriptors:")
-print(descriptor_clean.shape[1])
+print("\nInitial features:")
+print(X_train.shape[1])
 
-# ----------------------------------------------------------
-# Combine metadata + descriptors
-# ----------------------------------------------------------
+# ---------------------------------------------------------
+# Correlation threshold
+# ---------------------------------------------------------
 
-final_df = pd.concat(
-    [metadata_df, descriptor_clean],
-    axis=1
+threshold = 0.90
+
+# ---------------------------------------------------------
+# Correlation matrix
+# ---------------------------------------------------------
+
+corr_matrix = X_train.corr().abs()
+
+upper = corr_matrix.where(
+    np.triu(
+        np.ones(corr_matrix.shape),
+        k=1
+    ).astype(bool)
 )
 
-print("\nFinal dataset shape:")
-print(final_df.shape)
+to_remove = [
+    column
+    for column in upper.columns
+    if any(upper[column] > threshold)
+]
 
-# ----------------------------------------------------------
+selected_features = [
+    c for c in feature_cols
+    if c not in to_remove
+]
+
+print("\nCorrelation threshold:", threshold)
+
+print("Initial features:", len(feature_cols))
+print("Removed:", len(to_remove))
+print("Remaining:", len(selected_features))
+
+# ---------------------------------------------------------
+# Apply same feature list
+# ---------------------------------------------------------
+
+train_final = train_df[
+    metadata_cols + selected_features
+]
+
+test_final = test_df[
+    metadata_cols + selected_features
+]
+
+# ---------------------------------------------------------
 # Save
-# ----------------------------------------------------------
+# ---------------------------------------------------------
 
-os.makedirs("output", exist_ok=True)
+train_final.to_csv(
+    train_output,
+    index=False
+)
 
-final_df.to_csv(output_file, index=False)
+test_final.to_csv(
+    test_output,
+    index=False
+)
 
-print("\nSaved file:")
-print(output_file)
+pd.DataFrame({
+    "Feature": selected_features
+}).to_csv(
+    feature_file,
+    index=False
+)
 
-print("\nCompleted Successfully.")
+print("\nTraining final shape:")
+print(train_final.shape)
+
+print("Testing final shape:")
+print(test_final.shape)
+
+print("\nSaved:")
+print(train_output)
+print(test_output)
+print(feature_file)
+
+print("=" * 70)
+print("Completed Successfully")
 print("=" * 70)
